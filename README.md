@@ -246,21 +246,24 @@ if (큐의 사이즈가 0이 아니고 현재 인덱스!=큐 사이즈일 경우
 <img src="./img/initialize.jpg">
 <img src="./img/help.jpg">
 <br>
-초기 화면과 도움말입니다
-<br>
+초기 화면과 도움말입니다 <br>
+
 ### (2) Exception Processing
-<img align=left src="./img/input_overtime.jpg">
-<img align=center src="./img/input_lowtime.jpg">
+
+<img align="left" src="./img/input_overtime.jpg">
+<img align="center" src="./img/input_lowtime.jpg">
 <br>
 여러 스레드를 사용하므로 하나의 스레드보다 필요한 데이터 공간이 많이 필요하기 때문에 입력 시간에 제한을 두지 않으면 메모리가 부족한 현상이 발생할 수 있습니다. 또는, 공유 메모리로 인한 시간 차이가 불가피하고, 시간이 커지면 커질수록 이 격차는 더 커지기 때문에 최대 10800분까지의 시간을 입력할 수 있도록 했습니다. 또한 최소 1분 이상은 진행되어야 하므로 이에 대한 처리도 했습니다<br>
-<img align=center src="./img/input_overpercent.jpg">
-<img align=center src="./img/input_lowpercent.jpg">
+<img align="left" src="./img/input_overpercent.jpg">
+<img align="center" src="./img/input_lowpercent.jpg">
 <br>
 확률 또한 1/~100%의 범위어야 하므로 이에 대한 예외 처리도 구현했습니다.<br>
 <img src="./img/inputerror.jpg">
 <br>
 숫자가 아닌 다른 타입의 값을 입력할 경우의 예외 처리도 구현했습니다.<br>
+
 ### (3) Result Window (각 5회 수행 후 평균치)
+
 <img src="./img/chart(percent).jpg">
 <img src="./img/graph(percent).jpg">
 <br>
@@ -268,5 +271,3 @@ if (큐의 사이즈가 0이 아니고 현재 인덱스!=큐 사이즈일 경우
 <img src="./img/chart(time).jpg">
 <img src="./img/graph(time).jpg">
 <br>58%의 확률로 시뮬레이션을 구동했을 때 시간 차이에 따른 실험 결과입니다. 시간과 상관없이 비슷한 비율을 보일 것이라는 예상과 크게 벗어나지 않았습니다.
-=======
->>>>>>> 4271285a211ca8e7a981beaed9209aa3f1802631
